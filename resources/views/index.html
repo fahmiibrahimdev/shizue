@@ -15,7 +15,7 @@
 	<div class="relative min-h-screen md:flex">
 
 		<!-- Mobile menu bar -->
-		<div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+		<div class="bg-slate-900 text-gray-100 flex justify-between md:hidden">
 			<!-- Logo -->
 			<a href="#" class="block p-4 text-white font-bold"><i class="fab fa-uikit mr-2"></i>
 				<span class="font-extrabold uppercase">SHIZUE FI</span></a>
@@ -25,10 +25,10 @@
 			</button>
 		</div>
 		<!-- Mobile menu bar -->
-		[]
+
 		<!-- Sidebar -->
 		<div
-			class="sidebar bg-slate-900 w-64 no-scrollbar overflow-y-scroll h-screen absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out md:relative md:translate-x-0">
+			class="sidebar bg-slate-900 w-64 no-scrollbar overflow-y-scroll h-screen absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out md:relative md:translate-x-0 z-50">
 			<!-- logo -->
 			<div class="px-4 pt-4 flex justify-center">
 				<a href="#">
@@ -250,18 +250,20 @@
 		</div>
 
 		<!-- Content -->
-		<div class="flex-1 px-4 py-2 h-screen overflow-y-scroll">
-			<button>
-				<i class="fas fa-bars invisible lg:visible sm:invisible mt-3"></i>
-			</button>
-			<div class="py-2">
-				<div class="mt-[-20px] lg:mt-4">
-					<p class="text-sm text-blue-200">Dashboard</p>
-					<h2 class="text-xl font-extrabold">Welcome, Fahmi Ibrahim</h2>
-				</div>
+		<div class="flex-1 h-screen overflow-y-scroll">
+			<div class="bg-slate-900 lg:p-6 hidden lg:block">
+				<button>
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
 
+			<div class="p-4 lg:p-5 bg-slate-800">
+				<p class="text-base lg:text-xl font-extrabold text-cyan-300">Dashboard</p>
+			</div>
+
+			<div class="py-2 px-2 lg:px-5">
 				<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2">
-					<div class="mt-4 px-4 py-5 bg-slate-800 rounded-lg" id="card">
+					<div class="mt-4 p-4 bg-slate-800 rounded-2xl lg:rounded-lg drop-shadow-md" id="card">
 						<div class="text-sm" id="card-body">
 							<div class="flex text-md text-gray-200 justify-between mb-2" id="text-between">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aspernatur quos?
